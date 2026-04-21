@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Knowledge-Driven AI Framework</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar glass-panel">
+            <div class="sidebar-header">
+                <i class="fa-solid fa-shield-halved logo-icon"></i>
+                <h2>Mission-Critical AI</h2>
+            </div>
+            
+            <div class="upload-section">
+                <h3>Document Knowledge Base</h3>
+                <div class="upload-area" id="drop-zone">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <p>Drag & Drop PDF or <span class="highlight">Browse</span></p>
+                    <input type="file" id="file-input" accept="application/pdf" hidden>
+                </div>
+                <!-- Status Indicators -->
+                <div class="status-indicator hidden" id="upload-status">
+                    <div class="spinner"></div>
+                    <span id="status-text">Indexing document...</span>
+                </div>
+                <div class="doc-info hidden" id="doc-info">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span id="doc-name">report.pdf</span>
+                    <i class="fa-solid fa-circle-check text-success"></i>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <p>Secure Enterprise Framework v1.0</p>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area">
+            <header class="chat-header glass-panel">
+                <div class="header-info">
+                    <h1>Technical Documentation Assistant</h1>
+                    <span class="status-badge"><span class="dot"></span> Online</span>
+                </div>
+            </header>
+
+            <div class="messages-container" id="chat-container">
+                <div class="message ai-message">
+                    <div class="avatar">AI</div>
+                    <div class="message-content">
+                        <p>Welcome to the Secure Knowledge-Driven AI Framework. Please upload a mission-critical document to begin securely analyzing and retrieving context.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area glass-panel">
+                <form id="chat-form">
+                    <input type="text" id="user-input" placeholder="Ask a question about the documentation..." autocomplete="off">
+                    <button type="submit" id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

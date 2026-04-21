@@ -1,0 +1,11 @@
+fastapi==0.111.0
+uvicorn==0.29.0
+python-multipart==0.0.9
+sentence-transformers
+faiss-cpu
+langchain
+pypdf
+langchain_community
+langchain-text-splitters
+openai
+python-dotenv
